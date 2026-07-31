@@ -44,6 +44,10 @@ body {
     background-color: #000000;
 }
 
+.toggle{
+    display: none;
+}
+
 .logo{
    font-family: "Poppins";
    font-size: 18px;
@@ -144,4 +148,176 @@ body {
     cursor: pointer;
     border: 0;
     border-radius: 4px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width:900px){
+
+    .container{
+        height:585px;
+    }
+
+    .Nav{
+        height:75px;
+        padding:10px 20px;
+    }
+
+
+    .menu ul{
+        gap:15px;
+    }
+
+
+    .menu>ul>li{
+        padding:8px 5px;
+    }
+
+
+    .hero{
+        margin-top:9rem;
+    }
+
+
+    .hero>h1{
+        font-size:45px;
+    }
+
+
+    .hero>p{
+        font-size:14px;
+        letter-spacing:1px;
+    }
+
+
+    .hero>button{
+        padding:10px 25px;
+    }
+
+}
+
+
+
+/* Mobile */
+@media (max-width:600px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    .container{
+        height:585px;
+        min-width:320px;
+    }
+
+
+    .Nav{
+        height:70px;
+        padding:10px;
+    }
+
+
+    .logo{
+        font-size:15px;
+    }
+
+
+    /* Toggle */
+    .toggle{
+        display:block;
+        color:#E98F09;
+        font-size:25px;
+        cursor:pointer;
+        z-index:10;
+    }
+
+
+    /* Menu hidden */
+    .menu{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#000;
+        padding:20px 0;
+    }
+
+
+    /* Menu show animation */
+    .menu.active{
+        display:block;
+        animation:menuAnimation .4s ease;
+    }
+
+
+    .menu ul{
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    .menu>ul>li{
+        padding:5px;
+    }
+
+
+    .menu ul li a{
+        font-size:14px;
+    }
+
+
+    /* Cart hidden */
+    .carting{
+        display:none;
+    }
+
+
+
+    .hero{
+        margin-top:8rem;
+        transform:translateX(0);
+        padding:0 15px;
+    }
+
+
+    .hero>h1{
+        font-size:32px;
+    }
+
+
+    .hero>p{
+        font-size:11px;
+        letter-spacing:.5px;
+        line-height:1.8;
+    }
+
+
+    .hero>button{
+        padding:8px 22px;
+        font-size:14px;
+    }
+
+}
+
+
+
+/* Toggle animation */
+
+@keyframes menuAnimation{
+
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
