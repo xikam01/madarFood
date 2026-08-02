@@ -250,10 +250,27 @@ body {
 }
 
 
+.price> h1{
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    color:#E98F09;
+}
 
 
 
+.info>h3{
+    font-size:14px;
+    font-family: "Poppins";
+}
 
+.info>p{
+    font-size: 12px;
+    font-weight: 300;
+    font-style: oblique;
+    font-family: "Poppins";
+}
 
 
 
@@ -338,8 +355,8 @@ body {
         padding:10px 25px;
     }
 
-}
 
+}
 
 
 /* Mobile */
