@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-}
-
-.containers{
-     width: 100%;
-     height: inherit;
-     background-color: #ffffff;
-     flex-direction: column;
-     gap:0.5rem;
-}
-
-
-
-.container{
     width: 100%;
-    height:585px;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.containers {
+    width: 100%;
+    height: inherit;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 585px;
     background-image: url("images/Rectangle 1.png");
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@ body {
     position: relative;
 }
 
-.container::before{
+.container::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -40,7 +40,7 @@ body {
     pointer-events: none;
 }
 
-.Nav{
+.Nav {
     width: 100%;
     height: 80px;
     display: flex;
@@ -52,39 +52,42 @@ body {
     background-color: #000000;
 }
 
-.toggle{
+.toggle {
     display: none;
 }
 
-.logo{
-   font-family: "Poppins";
-   font-size: 18px;
-   font-weight: 600;
-   font-style: normal;
+.logo {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
 }
-.logo>p{
+
+.logo>p {
     color: white;
 }
-.logo>p>span{
-    color:#E98F09;
+
+.logo>p>span {
+    color: #E98F09;
 }
 
 
 
-.menu ul{
+.menu ul {
     display: flex;
     align-items: center;
     gap: 30px;
     list-style: none;
 }
 
-.menu>ul>li{
+.menu>ul>li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.menu>ul>li::after{
+
+.menu>ul>li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -93,24 +96,25 @@ body {
     margin: auto;
     transition: 0.5s;
 }
-.menu>ul>li:hover::after{
+
+.menu>ul>li:hover::after {
     width: 100%;
 }
 
-.menu ul li a{
+.menu ul li a {
     color: white;
     text-decoration: none;
 }
 
 
-.carting{
+.carting {
     display: flex;
     align-items: center;
-    gap:  20px;
+    gap: 20px;
 }
 
 .serching i,
-.cr i{
+.cr i {
     color: #E98F09;
     font-size: 18px;
 }
@@ -118,24 +122,25 @@ body {
 
 .hero {
     transform: translateX(0.5rem);
-     margin-top: 10rem;    
-     position: relative;
-     z-index: 2;
-     text-align: center;
+    margin-top: 10rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }
-.hero>h1{
+
+.hero>h1 {
     color: #ffffff;
     font-family: "Poppins";
     font-size: 60px;
     font-weight: 600;
 }
 
-.hero>h1>span{
-     color: #E98F09;
+.hero>h1>span {
+    color: #E98F09;
 }
 
 
-.hero>p{
+.hero>p {
     color: #ffffff;
     font-family: "Poppins";
     font-size: 16px;
@@ -145,8 +150,8 @@ body {
 }
 
 
-.hero>button{
-    padding:10px 30px;
+.hero>button {
+    padding: 10px 30px;
     margin-top: 20px;
     background-color: #E98F09;
     color: #ffffff;
@@ -160,38 +165,39 @@ body {
 
 
 
-.about{
+.about {
     margin-top: 2rem;
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
-   padding: 30px 80px;
-   /* background-color: #E98F09; */
+    padding: 30px 80px;
+    /* background-color: #E98F09; */
 }
 
-.image>img{
+.image>img {
     width: 150px;
     height: 150px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.texting{
+.texting {
     font-family: "Poppins";
     font-style: normal;
     text-align: center;
-   
-    
+
+
 }
 
 
-.texting>h2{
+.texting>h2 {
     font-size: 20px;
     font-weight: 700;
     font-style: italic;
     letter-spacing: 1px;
 }
-.texting>p{
+
+.texting>p {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -199,27 +205,27 @@ body {
 
 
 
-.Servicescontainer{
-     width: 100%;
-     padding: 30px;
-     display: grid;
-     grid-template-columns: repeat(3,1fr);
-     gap: 30px;
-     justify-items: center;
-     align-items: center;
-     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-     margin-top: 2rem;
+.Servicescontainer {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 2rem;
 }
 
 
-.Boxone{
+.Boxone {
     width: 60%;
-    height:300px;
+    height: 300px;
     text-align: center;
     padding: 10px 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Boxone:hover {
@@ -227,17 +233,18 @@ body {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 25px;
 }
 
-.img{
+.img {
     width: 100%;
     height: 50%;
 }
-.img>img{
-      width: 100%;
+
+.img>img {
+    width: 100%;
     display: block;
     object-fit: cover;
 }
 
-.qu{
+.qu {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -245,27 +252,27 @@ body {
     padding: 10px 15px;
 }
 
-.stars>i{
+.stars>i {
     color: #E98F09;
 }
 
 
-.price> h1{
+.price>h1 {
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 600;
     font-style: italic;
-    color:#E98F09;
+    color: #E98F09;
 }
 
 
 
-.info>h3{
-    font-size:14px;
+.info>h3 {
+    font-size: 14px;
     font-family: "Poppins";
 }
 
-.info>p{
+.info>p {
     font-size: 12px;
     font-weight: 300;
     font-style: oblique;
@@ -278,7 +285,7 @@ body {
 
 
 
-
+...
 
 .contactUS {
     width: 100%;
@@ -286,7 +293,7 @@ body {
     text-align: center;
     align-items: center;
     padding: 10px 15px;
-    margin-top:4rem;
+    margin-top: 4rem;
     background-color: #f6f4f4;
 }
 
@@ -350,45 +357,45 @@ input:focus {
 /* ================= RESPONSIVE ================= */
 
 /* Tablet */
-@media (max-width:900px){
+@media (max-width:900px) {
 
-    .container{
-        height:585px;
+    .container {
+        height: 585px;
     }
 
-    .Nav{
-        height:75px;
-        padding:10px 20px;
+    .Nav {
+        height: 75px;
+        padding: 10px 20px;
     }
 
-    .menu ul{
-        gap:15px;
-    }
-
-
-    .menu>ul>li{
-        padding:8px 5px;
+    .menu ul {
+        gap: 15px;
     }
 
 
-    .hero{
-        margin-top:9rem;
+    .menu>ul>li {
+        padding: 8px 5px;
     }
 
 
-    .hero>h1{
-        font-size:45px;
+    .hero {
+        margin-top: 9rem;
     }
 
 
-    .hero>p{
-        font-size:14px;
-        letter-spacing:1px;
+    .hero>h1 {
+        font-size: 45px;
     }
 
 
-    .hero>button{
-        padding:10px 25px;
+    .hero>p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+
+    .hero>button {
+        padding: 10px 25px;
     }
 
 
@@ -403,104 +410,104 @@ input:focus {
 
 
 /* Mobile */
-@media (max-width:600px){
+@media (max-width:600px) {
 
-    body{
-        overflow-x:hidden;
+    body {
+        overflow-x: hidden;
     }
 
 
-    .container{
-        height:585px;
-        min-width:320px;
+    .container {
+        height: 585px;
+        min-width: 320px;
     }
 
 
-    .Nav{
-        height:70px;
-        padding:10px;
+    .Nav {
+        height: 70px;
+        padding: 10px;
     }
 
 
-    .logo{
-        font-size:15px;
+    .logo {
+        font-size: 15px;
     }
 
 
     /* Toggle */
-    .toggle{
-        display:block;
-        color:#E98F09;
-        font-size:25px;
-        cursor:pointer;
-        z-index:10;
+    .toggle {
+        display: block;
+        color: #E98F09;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 10;
     }
 
 
     /* Menu hidden */
-    .menu{
-        display:none;
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#000;
-        padding:20px 0;
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        padding: 20px 0;
     }
 
 
     /* Menu show animation */
-    .menu.active{
-        display:block;
-        animation:menuAnimation .4s ease;
+    .menu.active {
+        display: block;
+        animation: menuAnimation .4s ease;
     }
 
 
-    .menu ul{
-        flex-direction:column;
-        gap:20px;
+    .menu ul {
+        flex-direction: column;
+        gap: 20px;
     }
 
 
-    .menu>ul>li{
-        padding:5px;
+    .menu>ul>li {
+        padding: 5px;
     }
 
 
-    .menu ul li a{
-        font-size:14px;
+    .menu ul li a {
+        font-size: 14px;
     }
 
 
     /* Cart hidden */
-    .carting{
-        display:none;
+    .carting {
+        display: none;
     }
 
 
 
-    .hero{
-        margin-top:8rem;
-        transform:translateX(0);
-        padding:0 15px;
+    .hero {
+        margin-top: 8rem;
+        transform: translateX(0);
+        padding: 0 15px;
     }
 
 
-    .hero>h1{
-        font-size:32px;
+    .hero>h1 {
+        font-size: 32px;
     }
 
 
-    .hero>p{
-        font-size:11px;
-        letter-spacing:.5px;
-        line-height:1.8;
+    .hero>p {
+        font-size: 11px;
+        letter-spacing: .5px;
+        line-height: 1.8;
     }
 
 
-    .hero>button{
-        padding:8px 22px;
-        font-size:14px;
+    .hero>button {
+        padding: 8px 22px;
+        font-size: 14px;
     }
 
 }
@@ -509,17 +516,17 @@ input:focus {
 
 /* Toggle animation */
 
-@keyframes menuAnimation{
+@keyframes menuAnimation {
 
-    from{
-        opacity:0;
-        transform:translateY(-30px);
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
     }
 
 
-    to{
-        opacity:1;
-        transform:translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 
 }
